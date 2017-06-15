@@ -1,0 +1,131 @@
+{
+  "contract_name": "Coin",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "minter",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalCoins",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "queryBalance",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mint",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "send",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "initialCoins",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "deliveredTo",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogCoinsMinted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "sentTo",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "LogCoinsSent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b6040516020806102e583398101604052515b60008054600160a060020a03191633600160a060020a039081169190911780835560018490551681526002602052604090208190555b505b610280806100656000396000f300606060405263ffffffff60e060020a60003504166307546172811461004d57806332454dbb1461007957806337f428411461009b57806340c10f19146100c9578063d0679d34146100ea575bfe5b341561005557fe5b61005d61010b565b60408051600160a060020a039092168252519081900360200190f35b341561008157fe5b61008961011a565b60408051918252519081900360200190f35b34156100a357fe5b610089600160a060020a0360043516610120565b60408051918252519081900360200190f35b34156100d157fe5b6100e8600160a060020a036004351660243561013f565b005b34156100f257fe5b6100e8600160a060020a03600435166024356101bf565b005b600054600160a060020a031681565b60015481565b600160a060020a0381166000908152600260205260409020545b919050565b60005433600160a060020a0390811691161461015a576101bb565b600160a060020a03821660008181526002602090815260409182902080548501905560018054850190558151928352820183905280517fa9e03d49381e41f3dd8ec266ef705de8dc4ee210f895ab90dd65a29bf0dcc8e39281900390910190a15b5050565b600160a060020a033316600090815260026020526040902054819010156101e5576101bb565b600160a060020a03338116600090815260026020908152604080832080548690039055928516808352918390208054850190558251918252810183905281517fb9f6cc65b3b9b7dc18152bc517c1783d9a9d5039e42b72918de9bd1a4b40487c929181900390910190a15b50505600a165627a7a7230582006ba99ed10ca83d0fb139f093ab920178b486298e1057bc4cdcbfc4f0fd856a60029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1497554568934
+}

@@ -1,0 +1,207 @@
+{
+  "contract_name": "CoinExchange",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiverAddr",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sendCoins",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "scOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ownerAddr",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mineCoins",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalCoins",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "queryBalance",
+      "outputs": [
+        {
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "coins",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "deliveredToAddr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "CoinsMinedEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "sentToAddr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "CoinsSentEvent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b6040516020806102e583398101604052515b60008054600160a060020a03191633600160a060020a039081169190911780835560018490551681526002602052604090208190555b505b610280806100656000396000f300606060405263ffffffff60e060020a60003504166302ba8742811461004d57806327cabc3f1461006e5780633215a59e1461009a57806332454dbb146100bb57806337f42841146100dd575bfe5b341561005557fe5b61006c600160a060020a036004351660243561010b565b005b341561007657fe5b61007e6101a0565b60408051600160a060020a039092168252519081900360200190f35b34156100a257fe5b61006c600160a060020a03600435166024356101af565b005b34156100c357fe5b6100cb61022f565b60408051918252519081900360200190f35b34156100e557fe5b6100cb600160a060020a0360043516610235565b60408051918252519081900360200190f35b600160a060020a033316600090815260026020526040902054819010156101315761019c565b600160a060020a03338116600090815260026020908152604080832080548690039055928516808352918390208054850190558251918252810183905281517f83796dbb8dc1f8ef7d6370f5ae3c964216defcff553d642db24c9e9c6d4792c5929181900390910190a15b5050565b600054600160a060020a031681565b60005433600160a060020a039081169116146101ca5761019c565b600160a060020a03821660008181526002602090815260409182902080548501905560018054850190558151928352820183905280517f1ac01e5e64b159bb0f25146db603ac10b13e3869527d4a87b55590607b63a1d59281900390910190a15b5050565b60015481565b600160a060020a0381166000908152600260205260409020545b9190505600a165627a7a72305820066ee5e7844fd0614cc2dd6767b4b1ebeb74e3c355195c6412b2d17a5f7939410029",
+  "networks": {
+    "1497553818919": {
+      "events": {
+        "0xa9e03d49381e41f3dd8ec266ef705de8dc4ee210f895ab90dd65a29bf0dcc8e3": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "deliveredTo",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogCoinsMinted",
+          "type": "event"
+        },
+        "0xb9f6cc65b3b9b7dc18152bc517c1783d9a9d5039e42b72918de9bd1a4b40487c": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "sentTo",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogCoinsSent",
+          "type": "event"
+        },
+        "0x1ac01e5e64b159bb0f25146db603ac10b13e3869527d4a87b55590607b63a1d5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "deliveredToAddr",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CoinsMinedEvent",
+          "type": "event"
+        },
+        "0x83796dbb8dc1f8ef7d6370f5ae3c964216defcff553d642db24c9e9c6d4792c5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "sentToAddr",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "CoinsSentEvent",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x142cfd10527b82e16736aa5a4ab3fed9a06de5ac",
+      "updated_at": 1497557583949
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497557583949
+}

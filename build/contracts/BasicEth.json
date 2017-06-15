@@ -1,0 +1,89 @@
+{
+  "contract_name": "BasicEth",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "InvokeName",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCallers",
+      "outputs": [
+        {
+          "name": "lastCaller",
+          "type": "bytes32"
+        },
+        {
+          "name": "callerName",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "caller",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "InvokeNameEvent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b7f6e756c6c000000000000000000000000000000000000000000000000000000006000555b5b610126806100426000396000f300606060405263ffffffff60e060020a600035041663623a343081146034578063dd8d4c40146046578063fc9c8d3914606c575bfe5b3415603b57fe5b6044600435608b565b005b3415604d57fe5b605360d4565b6040805192835260208301919091528051918290030190f35b3415607357fe5b607960f4565b60408051918252519081900360200190f35b600160a060020a0333166000908152600160205260408082208390558282555182917f2a30337d29926c1b5220936068d91042438fe3713b7e3a019d82a66e39ece08491a25b50565b60008054600160a060020a033316825260016020526040909120545b9091565b600054815600a165627a7a723058203c12ffe302a383f925420d9de260f5d011381cfe1f9b4d4b7d8bfd3340a998610029",
+  "networks": {
+    "1497553818919": {
+      "events": {
+        "0x2a30337d29926c1b5220936068d91042438fe3713b7e3a019d82a66e39ece084": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "name",
+              "type": "bytes32"
+            }
+          ],
+          "name": "InvokeNameEvent",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x854fa8ed5b8c0898d210cda7334eb680f0a0a163",
+      "updated_at": 1497564585929
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497564585929
+}
