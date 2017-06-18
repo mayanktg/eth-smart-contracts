@@ -1,0 +1,18 @@
+{
+  "tests": "codeceptjs/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "https://wallet.ethereum.org",
+      "waitForTimeout": 10000,
+      "show": false
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "solidity"
+}
