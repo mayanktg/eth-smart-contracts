@@ -18,3 +18,10 @@ $ truffle compile
 $ truffle migrate
 $ truffle test
 ```
+
+For acceptance testing
+```
+$ npm i -g codeceptjs-webdriverio
+$ npm i -g nightmare nightmare-upload
+$ codeceptjs run --steps
+```
